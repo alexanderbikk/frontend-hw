@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Better to explicitly set encoding -->
+    <meta charset="UTF-8" />
+    <!-- Important to have native viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMAJI Coffee</title>
+  </head>
+  <body>
+    <header>
+      <!--Logo here-->
+      <img
+        src="../images/logo.png"
+        alt="IMAJI Coffee"
+        width="208"
+        height="40"
+      />
+      <nav aria-label="Main website links">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Story</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Space</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">News</a></li>
+          <li>
+            <button type="button">Cart <span>(2)</span></button>
+          </li>
+          <li><button type="button">Sign In</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section aria-label="Product detail">
+        <div>
+          <ul>
+            <li>
+              <img
+                src="../images/details/imaji-coffee-at-home-classic-small.png"
+                alt="At Home Classic small"
+                width="157"
+                height="164"
+              />
+            </li>
+            <li>
+              <img
+                src="../images/details/imaji-coffee-detail-1.png"
+                alt="Imaji coffee detail 1"
+                width="157"
+                height="164"
+              />
+            </li>
+            <li>
+              <img
+                src="../images/details/imaji-coffee-detail-2.png"
+                alt="Imaji coffee detail 2"
+                width="157"
+                height="164"
+              />
+            </li>
+            <li>
+              <img
+                src="../images/details/imaji-coffee-detail-3.png"
+                alt="Imaji coffee detail 3"
+                width="157"
+                height="164"
+              />
+            </li>
+          </ul>
+          <img
+            src="../images/details/imaji-coffee-at-home-classic-big.png"
+            alt="At Home Classic"
+            width="468"
+            height="707"
+          />
+        </div>
+        <section aria-label="Product information">
+          <header>
+            <nav aria-label="Breadcrumb">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li aria-hidden="true"><span>></span></li>
+                <li><a href="#">Menu</a></li>
+                <li aria-hidden="true"><span>></span></li>
+                <li><a href="#">Detail</a></li>
+              </ul>
+            </nav>
+          </header>
+          <div>
+            <h1>At Home - Classic</h1>
+            <p><strong>$5,00</strong> <s>$6,00</s></p>
+            <span aria-hidden="true">&middot;</span>
+            <p>Get 20% off in App</p>
+          </div>
+          <div>
+            <h2>Description:</h2>
+            <p id="details-description-text">
+              An all-time favorite blend with citrus fruit character, caramel
+              flavors, and a pleasant faintly floral aroma. Locked scent:
+              Excelso prevents air from entering the packaging with a locked
+              aroma, ensuring the coffee's freshness. Storage Way: To maintain
+              the taste of coffee and the freshness of the aroma, store Excelso
+              coffee in an airtight.
+            </p>
+            <button
+              type="button"
+              aria-controls="details-description-text"
+              aria-expanded="true"
+            >
+              Read less
+            </button>
+          </div>
+          <footer>
+            <button type="button">Add to Cart</button>
+            <div role="group" aria-label="Manage quantity">
+              <button type="button" aria-label="Decrease quantity">-</button>
+              <span>1</span>
+              <button type="button" aria-label="Increase quantity">+</button>
+            </div>
+          </footer>
+        </section>
+      </section>
+      <section aria-label="Similar products">
+        <header>
+          <!--- Considering h1, h2 for top section is hould be h3--->
+          <h2>You May Also Like</h2>
+        </header>
+        <ul>
+          <li>
+            <article>
+              <div>
+                <img
+                  src="../images/menu/imaji-coffee-at-home-house-blend.png"
+                  alt="At Home Blend"
+                  width="256"
+                  height="300"
+                />
+                <img
+                  src="../images/menu/sale.png"
+                  alt="Sale"
+                  width="91"
+                  height="52"
+                />
+              </div>
+              <!---Change to <p> so that we can re-use it at any level as article/product card-->
+              <p>AT HOME HOUSE BLEND</p>
+              <p>Available Buy at Wewbsite</p>
+              <p><strong>$5,00</strong> <s>$6,00</s></p>
+              <p>Get 20% Off in App</p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <div>
+                <img
+                  src="../images/menu/imaji-coffee-at-home-arabica.png.png"
+                  alt="At Home Blend"
+                  width="256"
+                  height="300"
+                />
+                <img
+                  src="../images/menu/sale.png"
+                  alt="Sale"
+                  width="91"
+                  height="52"
+                />
+              </div>
+              <p>AT HOME ARABICA</p>
+              <p>Available Buy at Wewbsite</p>
+              <p><strong>$5,00</strong> <s>$6,00</s></p>
+              <p>Get 20% Off in App</p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <div>
+                <img
+                  src="../images/menu/imaji-coffee-at-home-luwak.png"
+                  alt="At Home Blend"
+                  width="256"
+                  height="300"
+                />
+                <img
+                  src="../images/menu/sale.png"
+                  alt="Sale"
+                  width="91"
+                  height="52"
+                />
+              </div>
+              <p>AT HOME LUWAK</p>
+              <p>Available Buy at Wewbsite</p>
+              <p><strong>$5,00</strong> <s>$6,00</s></p>
+              <p>Get 20% Off in App</p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <div>
+                <img
+                  src="../images/menu/imaji-coffee-at-home-luwak.png"
+                  alt="At Home Blend"
+                  width="256"
+                  height="300"
+                />
+                <img
+                  src="../images/menu/sale.png"
+                  alt="Sale"
+                  width="91"
+                  height="52"
+                />
+              </div>
+              <p>AT HOME LUWAK</p>
+              <p>Available Buy at Wewbsite</p>
+              <p><strong>$5,00</strong> <s>$6,00</s></p>
+              <p>Get 20% Off in App</p>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <!---Also changed to <p> for reusability-->
+        <p>Our Location</p>
+        <p>Jl. Bangkringan No 19, RT.11/RW.2, Kota Surabaya, 60124</p>
+        <p><strong>Customer Service</strong> +6282-2876-6862</p>
+        <p><strong>We Are Open from</strong> Sun - Mon 10 AM - 22 PM</p>
+      </div>
+      <div>
+        <nav aria-label="Social media">
+          <ul>
+            <li>
+              <a href="#"
+                ><img
+                  src="../images//icons/spotify.png"
+                  alt="Spotify"
+                  width="24"
+                  height="24"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="../images//icons/instagram.png"
+                  alt="Instagram"
+                  width="24"
+                  height="24"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="../images//icons/tik-tok.png"
+                  alt="Tiktok"
+                  width="24"
+                  height="24"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="../images//icons/youtube.png"
+                  alt="YouTube"
+                  width="24"
+                  height="24"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="../images//icons/twitter.png"
+                  alt="Twitter"
+                  width="24"
+                  height="24"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="../images//icons/telegram.png"
+                  alt="Telegram"
+                  width="24"
+                  height="24"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+        <div>
+          <p>Delivery Order</p>
+          <nav aria-label="Download Apps">
+            <ul>
+              <li>
+                <a href="#"
+                  ><img
+                    src="../images/footer/app-store.png"
+                    alt="App Store"
+                    width="134"
+                    height="40"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="../images/footer/google-play.png"
+                    alt="Google Play"
+                    width="134"
+                    height="40"
+                /></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div>
+        <p>© 2023 IMAJI COFFEE, All rights reserved</p>
+        <nav aria-label="Legal links">
+          <ul>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
