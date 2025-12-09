@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.button {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 12px 14px;
+  background-color: transparent;
+}
+
+.button--primary {
+  color: #fff;
+  background-color: #a27b5c;
+  border: 2px solid #a27b5c;
+}
+
+.button--outline {
+  color: #a27b5c;
+  background-color: #fff;
+  border: 2px solid #a27b5c;
+}
