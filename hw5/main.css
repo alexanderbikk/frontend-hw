@@ -1,0 +1,102 @@
+/* Genelar overrides */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 500;
+}
+
+/* Geneal styles */
+body {
+  color: #121212;
+  font-size: 18px;
+}
+
+/* Button styles */
+.button {
+  font-weight: 500;
+  padding: 12px 14px;
+  background-color: transparent;
+}
+
+.button--primary {
+  color: #fff;
+  background-color: #a27b5c;
+  border: 2px solid #a27b5c;
+}
+
+.button--outline {
+  color: #a27b5c;
+  background-color: #fff;
+  border: 2px solid #a27b5c;
+}
+
+/* Card styles */
+.card {
+  display: inline-block;
+  font-weight: 400;
+}
+
+.card__image {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.card__image--primary {
+  display: block;
+  width: 300px;
+  height: 300px;
+}
+
+.card__image--special {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 91px;
+  height: 52px;
+}
+
+.card__title {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.card__subtitle {
+  color: #7f7f7f;
+
+  margin-bottom: 16px;
+}
+
+.card__price {
+  margin-bottom: 8px;
+}
+
+.card__price--new {
+  font-size: 28px;
+}
+
+.card__price--old {
+  text-decoration: line-through;
+  padding-left: 5px;
+}
+
+.card__promo {
+  color: #a27b5c;
+}
+
+.card__title,
+.card__price--new {
+  font-weight: 500;
+}
