@@ -54,13 +54,13 @@ body {
   margin-bottom: 16px;
 }
 
-.product-card__image--primary {
+.product-card__main-image {
   display: block;
   width: 300px;
   height: 300px;
 }
 
-.product-card__image--special {
+.product-card__badge-image {
   position: absolute;
   top: 0;
   left: 0;
@@ -83,11 +83,11 @@ body {
   margin-bottom: 8px;
 }
 
-.product-card__price--new {
+.product-card__price-new {
   font-size: 28px;
 }
 
-.product-card__price--old {
+.product-card__price-old {
   text-decoration: line-through;
   padding-left: 5px;
 }
@@ -97,6 +97,6 @@ body {
 }
 
 .product-card__title,
-.product-card__price--new {
+.product-card__price-new {
   font-weight: 500;
 }
