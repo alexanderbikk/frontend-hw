@@ -21,13 +21,25 @@ h3 {
 /* Geneal styles */
 body {
   color: #121212;
-  font-size: 18px;
+  /* text-base sizes */
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+button,
+input,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
 }
 
 /* Button styles */
 .button {
   font-weight: 500;
-  padding: 12px 14px;
+  padding: 10px 16px;
   background-color: transparent;
 }
 
@@ -49,33 +61,45 @@ body {
   font-weight: 400;
 }
 
-.product-card__image {
+.product-card__media {
   position: relative;
   margin-bottom: 16px;
 }
 
-.product-card__main-image {
+.product-card__image {
   display: block;
   width: 300px;
   height: 300px;
 }
 
-.product-card__badge-image {
+.product-card__badge {
   position: absolute;
+  font-size: 20px;
+  line-height: 28px;
   top: 0;
   left: 0;
-  width: 91px;
-  height: 52px;
+  padding: 12px 20px;
+}
+
+.product-card__badge--sale {
+  color: #fff;
+  background-color: #f14c35;
+}
+
+.product-card__badge--out-of-stock {
+  background-color: #000;
 }
 
 .product-card__title {
   font-size: 24px;
+  line-height: 32px;
   margin-bottom: 8px;
 }
 
 .product-card__subtitle {
   color: #7f7f7f;
-
+  font-size: 20px;
+  line-height: 28px;
   margin-bottom: 16px;
 }
 
@@ -84,16 +108,21 @@ body {
 }
 
 .product-card__price-new {
-  font-size: 28px;
+  font-size: 36px;
+  line-height: 40px;
 }
 
 .product-card__price-old {
   text-decoration: line-through;
   padding-left: 5px;
+  font-size: 20px;
+  line-height: 28px;
 }
 
 .product-card__promo {
   color: #a27b5c;
+  font-size: 20px;
+  line-height: 28px;
 }
 
 .product-card__title,
