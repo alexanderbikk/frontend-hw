@@ -1,0 +1,242 @@
+/* Genelar overrides */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 500;
+}
+
+/* Geneal styles */
+body {
+  color: #121212;
+  /* text-base sizes */
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+button,
+input,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.link {
+  font-size: 20px;
+  line-height: 28px;
+  color: #121212;
+  text-decoration: none;
+}
+
+/* Button styles */
+.button {
+  font-weight: 500;
+  padding: 10px 16px;
+  background-color: transparent;
+}
+
+.button--primary {
+  color: #fff;
+  background-color: #a27b5c;
+  border: 2px solid #a27b5c;
+}
+
+.button--outline {
+  color: #a27b5c;
+  background-color: #fff;
+  border: 2px solid #a27b5c;
+}
+
+/* Header */
+.main-navigation {
+  padding: 32px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.main-navigation__list {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 0 24px;
+}
+
+/*Product catalog*/
+.product-catalog {
+  max-width: 1600px;
+  margin: auto;
+}
+
+.product-catalog__description {
+  padding: 0 124px;
+  margin-top: 48px;
+}
+
+.product-catalog__controls {
+  padding: 0 124px;
+  margin: 32px 0;
+}
+
+.product-filters{
+  display: flex;
+  gap: 0 32px;
+}
+.product-filters__item{
+  flex: 0 0 calc((100% - 2 * 32px) / 3);
+}
+
+.product-filters__header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-catalog__content {
+  margin-bottom: 48px;
+}
+
+.product-filters__control{
+  width: 100%;
+}
+
+.category-tabs {
+  padding: 0;
+  margin-bottom: 48px;
+}
+
+.category-tabs__list {
+  display: flex;
+}
+
+.category-tabs__item {
+  padding: 32px;
+  display: flex;
+  justify-content: center;
+  flex: 0 0 calc(100% / 3);
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.category-tabs__item--active {
+  border-top: 1px solid #121212;
+  border-bottom: 1px solid #121212;
+}
+
+/* The first approach is to do it with flex, which is possible but not recommeded fro multi-dimentional grids.
+ We have to deal with media on each viewport to calcualte new size - for example have different media to set items count per row
+ Rozetka for example does it in their product list with "max-width: 1600px" and flex for items with calc*/
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 80px;
+  gap: 16px 24px;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.product-list__item {
+  flex: 0 0 calc((100% - 3 * 24px) / 4);
+}
+
+/* Product card styles */
+.product-card {
+  display: inline-block;
+  font-weight: 400;
+}
+
+.product-card__media {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.product-card__image {
+  display: block;
+  /* aspect-ratio: 1 / 1;
+  object-fit: cover; */
+  width: 100%;
+}
+
+.product-card__badge {
+  position: absolute;
+  font-size: 20px;
+  line-height: 28px;
+  top: 0;
+  left: 0;
+  padding: 12px 20px;
+}
+
+.product-card__badge--sale {
+  color: #fff;
+  background-color: #f14c35;
+}
+
+.product-card__badge--out-of-stock {
+  background-color: #000;
+}
+
+.product-card__title {
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 8px;
+}
+
+.product-card__subtitle {
+  color: #7f7f7f;
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 16px;
+}
+
+.product-card__price {
+  margin-bottom: 8px;
+}
+
+.product-card__price-new {
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.product-card__price-old {
+  text-decoration: line-through;
+  padding-left: 5px;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.product-card__promo {
+  color: #a27b5c;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.product-card__title,
+.product-card__price-new {
+  font-weight: 500;
+}
+
+.product-pagination {
+  display: flex;
+  justify-content: center;
+}
